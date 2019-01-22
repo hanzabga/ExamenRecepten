@@ -1,0 +1,15 @@
+html {
+  font-size: 20px;
+}
+
+.product {
+  margin-top: 0.5em;
+}
+
+.product > span:first-child {
+  font-weight: bold
+}
+
+.product > span:first-child:after {
+  content:':'
+}

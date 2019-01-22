@@ -1,0 +1,32 @@
+<div class='container'>
+   <h1>Edit Product</h1>
+
+   <form (ngSubmit)='onSubmit()' #productForm='ngForm'>
+
+      <div class='form-group'>
+         <label for='name'>Name :</label>
+         <input type='text' class='form-control' id='name' required
+            [(ngModel)]='model.name' name='name'>
+      </div>
+      <br />
+      <div class='form-group'>
+         <label for='description'>Description :</label>
+         <input type='text' class='form-control' id='description' required
+            [(ngModel)]='model.description' name='description'>
+      </div>
+      <br />
+      <div class='form-group'>
+         <label for='price'>Price :</label>
+         <input type='text' class='form-control' id='price' required
+            [(ngModel)]='model.price' name='price'>
+      </div>
+      <br />
+      <div class='form-group'>
+         <label for='tijd'>tijd :</label>
+         <input type='text' class='form-control' id='tijd' required
+            [(ngModel)]='model.tijd' name='tijd'>
+      </div>
+      <br />
+      <button type='submit' class='btn btn-success' [disabled]='productForm.invalid'>Edit</button>
+   </form>
+</div>
